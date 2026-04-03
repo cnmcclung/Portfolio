@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact</title> -->
 <!-- </head>
 <body>
     <h1>View the below contact</h1>
@@ -42,38 +42,38 @@
 
 </body>
 </html> -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+	</head>
+	<body>
 
-</head>
-<body>
+		<h1>Contact Me</h1>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../contact/index.html">Contact</a>
-        <a href="../resume/index.html">Profile</a>
-    </nav>
+		<form action="mailto:your_email@example.com" method="POST" enctype="text/plain">
+			
+			<label>
+				Your Email:
+				<input type="email" name="email">
+			</label>
+			<br><br>
 
-    <h1>Contact</h1>
+			<label>
+				Subject:
+				<input name="subject">
+			</label>
+			<br><br>
 
-    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+			<label>
+				Message:
+				<textarea name="body"></textarea>
+			</label>
+			<br><br>
 
-        <label>
-            Email:
-            <input type="email" name="email" required>
-        </label>
+			<button>Send</button>
 
-        <label>
-            Subject:
-            <input name="subject" required>
-        </label>
+		</form>
 
-        <label>
-            Body:
-            <textarea name="body" rows="2" cols="25" required></textarea>
-        </label>
-
-        <button type="submit">Submit</button>
-    </form>
-
-</body>
+	</body>
 </html>
