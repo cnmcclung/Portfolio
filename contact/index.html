@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-</head>
+<!-- </head>
 <body>
     <h1>View the below contact</h1>
 
@@ -39,6 +39,41 @@
         <button>Send</button>
     </form>
 
+
+</body>
+</html> -->
+
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../contact/index.html">Contact</a>
+        <a href="../resume/index.html">Profile</a>
+    </nav>
+
+    <h1>Contact</h1>
+
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+
+        <label>
+            Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Subject:
+            <input name="subject" required>
+        </label>
+
+        <label>
+            Body:
+            <textarea name="body" rows="2" cols="25" required></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>
