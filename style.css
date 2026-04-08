@@ -7,6 +7,25 @@ body {
   max-width: 800px;       /* limits how wide the content can get */
   margin-inline: auto;    /* centers the content horizontally */
 
+}
 
 
+nav {
+    display: flex;
+}
+
+nav ul,
+nav li {
+    display: contents;
+}
+
+
+nav a {
+    flex: 1;
+    text-align: center;
+}
+
+nav a.current {
+    font-weight: bold;
+    border-bottom: 2px solid black;
 }
