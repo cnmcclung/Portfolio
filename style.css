@@ -7,7 +7,8 @@ html {
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     background-color: color-mix(in oklch, var(--color-accent) 20%, transparent);
-    padding: 0.1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.1em;
 }
 
 body {
