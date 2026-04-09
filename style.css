@@ -31,7 +31,7 @@ button {
 form {
     display: grid;
     grid-template-columns: auto 1fr;
-    row-gap: 0.05em;
+    row-gap: 0.01em;
     column-gap: 0.3em;
 }
 
