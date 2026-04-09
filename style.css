@@ -30,7 +30,8 @@ button {
 
 form {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 0.2fr;
+    column-gap: 0.5em;
 }
 
 label {
