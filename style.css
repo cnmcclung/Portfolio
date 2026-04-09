@@ -104,7 +104,6 @@ nav a.current {
 .resume {
     font: inherit;
     font-family: Arial, sans-serif;
-    margin: 40px;
     color: #333;
     line-height: 1.5;
 }
@@ -138,10 +137,3 @@ nav a.current {
     margin: 5px 0 15px 20px;
 }
 
-.resume body {
-
-  max-width: 800px;       /* limits how wide the content can get */
-  margin-inline: auto;    /* centers the content horizontally */
-
-
-}
