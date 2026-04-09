@@ -137,3 +137,11 @@ nav a.current {
 .resume ul {
     margin: 5px 0 15px 20px;
 }
+
+.resume body {
+
+  max-width: 800px;       /* limits how wide the content can get */
+  margin-inline: auto;    /* centers the content horizontally */
+
+
+}
