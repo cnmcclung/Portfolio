@@ -7,9 +7,10 @@ function $$(selector, context = document) {
 // Get all nav links
 let navLinks = $$("nav a");
 
-// Find the current page link
+
+
 let currentLink = navLinks.find(
-  (a) => a.host === location.host && a.pathname === location.pathname
+  (a) => a.href === location.href
 );
 
 // Add the class (safe version)
