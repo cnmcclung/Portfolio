@@ -8,10 +8,9 @@ function $$(selector, context = document) {
 let navLinks = $$("nav a");
 
 
+let currentLink = navLinks.find((a) => {
+  return a.host === location.host &&
+         a.pathname.replace(/index\.html$/, "") === location.pathname.replace(/index\.html$/, "");
+});
 
-let currentLink = navLinks.find(
-  (a) => a.href === location.href
-);
-
-// Add the class (safe version)
 currentLink?.classList.add("current");
