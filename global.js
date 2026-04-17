@@ -16,8 +16,18 @@ currentLink?.classList.add('current');
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
-  // add the rest of your pages here
+  { url: 'resume/', title: 'Resume' },
+  { url: 'contact/', title: 'Contact' },
+  { url: 'https://github.com/cnmcclung', title: 'GitHub' }
 ];
+
+const BASE_PATH =
+  (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+    ? "/"
+    : "/Portfolio/"; // ⚠️ replace with your repo name later
+
+
+
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
@@ -25,14 +35,11 @@ document.body.prepend(nav);
 for (let p of pages) {
   let url = p.url;
   let title = p.title;
-  // next step: create link and add it to nav
 }
+
+url = !url.startsWith("http") ? BASE_PATH + url : url;
 
 // Create link and add it to nav
 nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  // Local server
-  : "/website/";         // GitHub Pages repo name
 
-url = !url.startsWith('http') ? BASE_PATH + url : url;
