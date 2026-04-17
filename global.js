@@ -23,30 +23,45 @@ document.body.prepend(nav);
 
 // Build links
 for (let p of pages) {
-    let url = p.url;
-    let title = p.title;
+  let url = p.url;
+  let title = p.title;
 
-    url = !url.startsWith("http") ? BASE_PATH + url : url;
+  url = !url.startsWith("http") ? BASE_PATH + url : url;
 
-    let a = document.createElement('a');
-    a.href = url;
-    a.textContent = title;
-    nav.append(a);
+  // Create link element instead of using HTML string
+  let a = document.createElement("a");
+  a.href = url;
+  a.textContent = title;
+
+  // Highlight current page
+  a.classList.toggle(
+    "current",
+    a.host === location.host && a.pathname === location.pathname
+  );
+
+  // Open external links in new tab
+  a.toggleAttribute(
+    "target",
+    a.host !== location.host
+  );
+
+  nav.append(a);
 }
 
 // THEN get links
-let navLinks = $$("nav a");
+//let navLinks = $$("nav a");
 
 // Highlight current page
+
 // let currentLink = navLinks.find(
 //   (a) => a.host === location.host && a.pathname === location.pathname
 // );
 
-let currentLink = navLinks.find((a) => {
-  let linkPath = a.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
-  let pagePath = location.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
-  return a.host === location.host && linkPath === pagePath;
-});
+// let currentLink = navLinks.find((a) => {
+//   let linkPath = a.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
+//   let pagePath = location.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
+//   return a.host === location.host && linkPath === pagePath;
+// });
 
 
-currentLink?.classList.add("current");
+// currentLink?.classList.add("current");
