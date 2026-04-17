@@ -38,8 +38,15 @@ for (let p of pages) {
 let navLinks = $$("nav a");
 
 // Highlight current page
-let currentLink = navLinks.find(
-  (a) => a.host === location.host && a.pathname === location.pathname
-);
+// let currentLink = navLinks.find(
+//   (a) => a.host === location.host && a.pathname === location.pathname
+// );
+
+let currentLink = navLinks.find((a) => {
+  let linkPath = a.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
+  let pagePath = location.pathname.replace(/index\.html$/, "").replace(/\/$/, "");
+  return a.host === location.host && linkPath === pagePath;
+});
+
 
 currentLink?.classList.add("current");
