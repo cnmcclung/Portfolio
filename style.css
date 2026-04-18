@@ -1,6 +1,18 @@
 :root {
     --color-accent: oklch(77.74% 0.12973 237.509 / 0.667);
 }
+:root {
+  --text-color: black;
+}
+
+:root:has(#theme-select option[value="dark"]:checked),
+:root[style*="color-scheme: dark"] {
+  --text-color: white;
+}
+
+
+
+
 html {
     accent-color: var(--color-accent);
 }
@@ -95,7 +107,7 @@ nav a {
 }
 
 nav a.current {
-    border-bottom: 0.4em solid oklch(69.916% 0.08692 210.095 / 0.473);
+    border-bottom: 0.4em solid oklch(79.837% 0.00009 271.152 / 0.473);
     padding-bottom: 0.1em;  /* reduces extra height from thick border */
 }
 
@@ -104,7 +116,7 @@ nav a.current {
 .resume {
     font: inherit;
     font-family: Arial, sans-serif;
-    color: #ffffffb5; 
+    color: var(--text-color); 
     line-height: 1.5;
 }
 
