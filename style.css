@@ -147,9 +147,8 @@ html {
   right: 1rem;
   font-size: 80%;
 }
-select {
-  font-family: inherit;
-}
+
+
 input,
 textarea,
 button,
