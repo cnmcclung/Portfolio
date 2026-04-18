@@ -82,9 +82,18 @@ document.body.insertAdjacentHTML(
   `
 );
 
-const select = document.getElementById("theme-select");
+const select = document.querySelector("#theme-select");
 
-select.addEventListener("change", (e) => {
-  document.documentElement.style.colorScheme = e.target.value;
+// Load saved preference
+const saved = localStorage.getItem("theme");
+if (saved) {
+  document.documentElement.style.colorScheme = saved;
+  select.value = saved;
+}
+
+// Listen for changes
+select.addEventListener("change", () => {
+  const value = select.value;
+  document.documentElement.style.colorScheme = value;
+  localStorage.setItem("theme", value);
 });
-
