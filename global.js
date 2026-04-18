@@ -80,7 +80,9 @@ document.body.insertAdjacentHTML(
   
 );
 
-const select = document.getElementById("theme-select");
+
+let select = document.querySelector("#color-scheme");
+
 
 select.addEventListener("change", (e) => {
   document.documentElement.style.colorScheme = e.target.value;
@@ -89,7 +91,6 @@ select.addEventListener("change", (e) => {
 document.documentElement.style.setProperty('color-scheme', event.target.value);
 
 
-let select = document.querySelector("#color-scheme");
 
 // Load saved preference
 if ("colorScheme" in localStorage) {
