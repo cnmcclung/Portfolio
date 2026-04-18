@@ -1,5 +1,5 @@
 :root {
-    --color-accent: oklch(62.612% 0.10322 236.421);
+    --color-accent: oklch(38.666% 0.07394 238.668 / 0.51);
 }
 html {
     accent-color: var(--color-accent);
@@ -83,7 +83,7 @@ nav li {
 nav {
     display: flex;
     margin-bottom: 1rem;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid oklch(38.524% 0.00813 209.028 / 0.473);
 }
 
 nav a {
@@ -95,7 +95,7 @@ nav a {
 }
 
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid oklch(38.524% 0.00813 209.028 / 0.473);
     padding-bottom: 0.1em;  /* reduces extra height from thick border */
 }
 
@@ -135,5 +135,9 @@ nav a.current {
 
 .resume ul {
     margin: 5px 0 15px 20px;
+}
+
+html {
+  color-scheme: light dark;
 }
 
