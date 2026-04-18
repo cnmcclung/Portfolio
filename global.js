@@ -81,27 +81,27 @@ document.body.insertAdjacentHTML(
 );
 
 
-//let select = document.querySelector("#color-scheme");
-const select = document.getElementById("theme-select");
+// //let select = document.querySelector("#color-scheme");
+// const select = document.getElementById("theme-select");
 
-select.addEventListener("change", (e) => {
-  document.documentElement.style.colorScheme = e.target.value;
-});
+// select.addEventListener("change", (e) => {
+//   document.documentElement.style.colorScheme = e.target.value;
+// });
 
-document.documentElement.style.setProperty('color-scheme', event.target.value);
+// document.documentElement.style.setProperty('color-scheme', event.target.value);
 
 
 
-// Load saved preference
-if ("colorScheme" in localStorage) {
-  document.documentElement.style.colorScheme = localStorage.colorScheme;
-  select.value = localStorage.colorScheme;
-}
+// // Load saved preference
+// if ("colorScheme" in localStorage) {
+//   document.documentElement.style.colorScheme = localStorage.colorScheme;
+//   select.value = localStorage.colorScheme;
+// }
 
-// Listen for changes
-select.addEventListener("change", (event) => {
-  let value = event.target.value;
+// // Listen for changes
+// select.addEventListener("change", (event) => {
+//   let value = event.target.value;
 
-  document.documentElement.style.colorScheme = value;
-  localStorage.colorScheme = value;
-});
+//   document.documentElement.style.colorScheme = value;
+//   localStorage.colorScheme = value;
+// });
