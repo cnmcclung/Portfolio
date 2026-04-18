@@ -45,8 +45,17 @@ for (let p of pages) {
     a.host !== location.host
   );
 
+
+  //here
+  if (a.host !== location.host) {
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+    }
+
+
   nav.append(a);
 }
+
 
 // THEN get links
 let navLinks = $$("nav a");
