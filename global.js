@@ -81,8 +81,8 @@ document.body.insertAdjacentHTML(
 );
 
 
-let select = document.querySelector("#color-scheme");
-
+//let select = document.querySelector("#color-scheme");
+const select = document.getElementById("theme-select");
 
 select.addEventListener("change", (e) => {
   document.documentElement.style.colorScheme = e.target.value;
