@@ -40,10 +40,10 @@ for (let p of pages) {
   );
 
   // Open external links in new tab
-  a.toggleAttribute(
-    "target",
-    a.host !== location.host
-  );
+//   a.toggleAttribute(
+//     "target",
+//     a.host !== location.host
+//   );
 
 
   //here
