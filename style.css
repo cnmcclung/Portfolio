@@ -6,7 +6,7 @@ html {
 }
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
-    background-color: color-mix(in oklch, var(--color-accent) 20%, transparent);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
     padding-top: 0.5em;
     padding-bottom: 0.1em;
 }
