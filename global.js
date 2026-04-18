@@ -70,7 +70,7 @@ currentLink?.classList.add("current");
 
 document.body.insertAdjacentHTML(
   "afterbegin",
-  
+  `
   <label class="color-scheme">
     Theme:
     <select id="theme-select">
@@ -79,7 +79,7 @@ document.body.insertAdjacentHTML(
       <option value="dark">Dark</option>
     </select>
   </label>
-  
+  `
 );
 
 const select = document.getElementById("theme-select");
