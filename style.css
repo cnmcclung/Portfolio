@@ -83,7 +83,7 @@ nav li {
 nav {
     display: flex;
     margin-bottom: 1rem;
-    border-bottom: 1px solid oklch(70.467% 0.09682 211.079 / 0.473);
+    border-bottom: 1px solid oklch(72.838% 0.00008 271.152 / 0.473);
 }
 
 nav a {
