@@ -141,3 +141,18 @@ html {
   color-scheme: light dark;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+select {
+  font-family: inherit;
+}
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
