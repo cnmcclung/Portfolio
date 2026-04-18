@@ -1,5 +1,5 @@
 :root {
-    --color-accent: oklch(85.878% 0.0822 234.83 / 0.667);
+    --color-accent: oklch(77.74% 0.12973 237.509 / 0.667);
 }
 html {
     accent-color: var(--color-accent);
@@ -109,12 +109,12 @@ nav a.current {
 }
 
 .resume h1 {
-    /* color: var(--color-accent); */
+    color: var(--color-accent);
     margin-bottom: 5px;
 }
 
 .resume h2 {
-    /* color: var(--color-accent); */
+    color: var(--color-accent);
     border-bottom: 2px solid #747474cb;
     padding-bottom: 5px;
     margin-top: 30px;
