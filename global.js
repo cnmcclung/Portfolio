@@ -123,6 +123,7 @@ select.addEventListener("change", () => {
 
 
 export async function fetchJSON(url) {
+
   try {
     // Fetch the JSON file from the given URL
     const response = await fetch(url);
@@ -135,4 +136,33 @@ export async function fetchJSON(url) {
   } catch (error) {
     console.error('Error fetching or parsing JSON data:', error);
   }
+}
+
+export function renderProjects(project, containerElement) {
+    containerElement.innerHTML = '';
+
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  // 1. Validate container
+  if (!containerElement) {
+    console.error('Container element is not valid');
+    return;
+  }
+
+  // 2. Clear old content
+  containerElement.innerHTML = '';
+
+  // 3. Loop through projects
+  projects.forEach(project => {
+    const article = document.createElement('article');
+
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
+    `;
+
+    containerElement.appendChild(article);
+  });
 }
