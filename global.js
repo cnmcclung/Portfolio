@@ -138,10 +138,10 @@ export async function fetchJSON(url) {
   }
 }
 
-export function renderProjects(project, containerElement) {
-    containerElement.innerHTML = '';
+// export function renderProjects(project, containerElement) {
+//     containerElement.innerHTML = '';
 
-}
+// }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   // 1. Validate container
