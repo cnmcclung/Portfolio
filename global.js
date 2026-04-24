@@ -168,11 +168,11 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 }
 
 
-// export async function fetchGitHubData(username) {
-//   return fetchJSON(`https://api.github.com/users/${username}`);
-// }
-
 export async function fetchGitHubData(username) {
-  const res = await fetch(`https://api.github.com/users/${username}`);
-  return res.json();
+  return fetchJSON(`https://api.github.com/users/${username}`);
 }
+
+// export async function fetchGitHubData(username) {
+//   const res = await fetch(`https://api.github.com/users/${username}`);
+//   return res.json();
+// }
