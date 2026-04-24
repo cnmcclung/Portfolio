@@ -1,7 +1,5 @@
 
 [
-
-
     {
         "title": "106 Project 1",
         "year": "2026",
@@ -38,40 +36,40 @@
         "image": "../images/UCschools.png",
         "description": "As we can see above, UCSD, contrary to our hypothesis, ranks generally in the higher range compared to other UCs. Smaller campuses like UCM, UCR, UCSB, and UCSC show highly variable engagement due to smaller sizes, but UCSD's score is notably higher than six other UCs, two of which (UCB, UCD) have larger student body sizes."
     },
-        {
+    {
         "title": "Temporal Trend Analysis",
-        "year": "2024",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Line_graph_example.svg",
-        "description": "This line graph tracks how values change over time, revealing trends, spikes, and gradual shifts in the dataset. It helps contextualize long-term movement rather than isolated data points."
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Time_series_plot.svg",
+        "description": "This line graph tracks changes in a variable over time, revealing long-term trends, fluctuations, and patterns that emerge only when data is viewed sequentially."
     },
     {
-        "title": "Network Connectivity Map",
-        "year": "2024",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Network_graph_example.svg",
-        "description": "This network graph represents relationships between entities, where nodes and edges highlight clusters of interaction and central hubs within the system."
+        "title": "Correlation Heatmap Study",
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Correlation_matrix_heatmap.svg",
+        "description": "This heatmap visualizes pairwise correlations between variables, using color intensity to represent strength and direction of relationships across the dataset."
+    },
+    {       
+         "title": "Scatter Plot Exploration",
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Scatter_plot_with_linear_regression_line.svg",
+        "description": "This scatter plot explores the relationship between two quantitative variables, highlighting potential correlations, clusters, and outliers in the data."
     },
     {
-        "title": "Geospatial Density Visualization",
-        "year": "2024",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/World_map_blank_without_borders.svg",
-        "description": "This map-based visualization represents spatial distribution of data across geographic regions, revealing areas of concentration and sparsity."
+        "title": "Network Graph Structure",
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Network_community_structure.svg",
+        "description": "This network graph represents relationships between entities, where nodes show items and edges reveal connections, clusters, and central hubs within the system."
     },
     {
         "title": "Distribution Analysis",
-        "year": "2024",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Normal_distribution_pdf.png",
-        "description": "This plot examines how values are distributed across the dataset, highlighting central tendency, spread, and skewness in the data."
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg",
+        "description": "This visualization shows the distribution of values in a dataset, highlighting spread, central tendency, and deviation from symmetry."
     },
     {
-        "title": "Multilingual Sentiment Comparison",
-        "year": "2023",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bar_chart_example.svg",
-        "description": "This bar chart compares sentiment scores across multiple language datasets, revealing variation in emotional expression and interpretation across linguistic groups."
-    },
-    {
-        "title": "Feature Importance Ranking",
-        "year": "2023",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Feature_importance_plot.png",
-        "description": "This visualization ranks variables by their predictive importance in a model, helping identify which features most strongly influence outcomes."
+        "title": "Multivariate Pair Plot",
+        "year": "2025",
+        "image": "https://seaborn.pydata.org/_images/scatterplot_matrix.png",
+        "description": "This pair plot displays relationships between multiple variables simultaneously, allowing for quick identification of correlations and variable interactions."
     }
 ]
