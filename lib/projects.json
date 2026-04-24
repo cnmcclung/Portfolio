@@ -3,9 +3,11 @@
 
 
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptate repellendus sunt unde ab et, nobis assumenda quos fuga minima quibusdam, fugiat illo pariatur asperiores voluptates. Laboriosam illum amet dolor."
+        "title": "106 Project 1",
+        "year": "2026",
+        "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+        "image": "../images/proj1img.png",
+        "description": "yassss"
     },
     {
         "title": "Maiores quisquam labore alias.",
