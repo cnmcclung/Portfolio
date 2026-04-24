@@ -1,5 +1,7 @@
 import { fetchJSON, renderProjects, fetchGithubData } from './global.js';
 
+
+
 const projects = await fetchJSON('./lib/projects.json');
 
 // get first 3 projects
