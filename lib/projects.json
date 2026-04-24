@@ -9,14 +9,16 @@
         "description": "My goal with this visualization was to investigate whether brands that market themselves as healthy are actually supported by stronger underlying nutrition profiles. As a consumer, I often notice terms like “natural,” “organic,” or “plant-based” on packaging, and I wanted to test whether these labels meaningfully reflect nutritional quality or function more as marketing tools."
     },
     {
-        "title": "Maiores quisquam labore alias.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quod sed sit eius, optio deleniti eveniet veniam incidunt dolore libero iusto quis, aliquam earum, fuga repudiandae ducimus quas dignissimos! Dicta, doloremque quisquam harum aut expedita voluptate suscipit sint quia!"
+        "title": "Symbolism",
+        "year": "2026",
+        "image": "../images/bloody.png",
+        "description": "This graph explores patterns in data that unintentionally resemble organic, blood-like forms, creating an unexpected visual tension between structure and interpretation. The resulting image invites viewers to consider how meaning can emerge from accidental patterns, even in purely quantitative outputs. Titled Symbolism, it highlights how data visualization can blur the boundary between scientific representation and artistic association."
     },
     {
-        "title": "Voluptatem, eveniet? Cupiditate, quidem.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Optio, officiis. Quia officiis nobis perferendis animi quis autem harum est magni, numquam suscipit nulla laudantium unde accusamus minima maxime, excepturi at voluptates eius repellendus quam, rerum obcaecati dolorem! Ducimus?"
+        "title": "DSC 80 Heatmap",
+        "year": "2026",
+        "image": "../images/heatmap.png",
+        "description": "This heatmap visualizes relationships between variables in the DSC 80 dataset, using color intensity to highlight patterns of similarity and difference across the data. By condensing complex interactions into a single visual structure, it makes underlying trends easier to identify at a glance. The result reveals clusters and gradients that would be difficult to detect in raw tabular form, emphasizing how visualization can simplify high-dimensional data."
     },
     {
         "title": "Ad eligendi iusto sunt!",
