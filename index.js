@@ -16,11 +16,17 @@ const profileStats = document.querySelector('#profile-stats');
 
 if (profileStats) {
   profileStats.innerHTML = `
-        <dl>
-          <dt>Public Repos:</dt><dd>${githubData.public_repos}</dd>
-          <dt>Public Gists:</dt><dd>${githubData.public_gists}</dd>
-          <dt>Followers:</dt><dd>${githubData.followers}</dd>
-          <dt>Following:</dt><dd>${githubData.following}</dd>
-        </dl>
-    `;
+    <h2>My GitHub Stats</h2>
+    <dl class="stats-grid">
+      <dt>Followers</dt>
+      <dt>Following</dt>
+      <dt>Public Repos</dt>
+      <dt>Public Gists</dt>
+
+      <dd>${githubData.followers}</dd>
+      <dd>${githubData.following}</dd>
+      <dd>${githubData.public_repos}</dd>
+      <dd>${githubData.public_gists}</dd>
+    </dl>
+  `;
 }

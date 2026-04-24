@@ -167,3 +167,19 @@ button,
 select {
   font-family: inherit;
 }
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.stats-grid dt {
+  grid-row: 1;
+}
+
+.stats-grid dd {
+  grid-row: 2;
+  margin: 0;
+}
