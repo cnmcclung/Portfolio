@@ -1,4 +1,4 @@
-import { fetchJSON, renderProjects, fetchGithubData } from 'global.js';
+import { fetchJSON, renderProjects, fetchGithubData } from './global.js';
 
 
 
