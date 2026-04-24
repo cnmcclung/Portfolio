@@ -38,40 +38,40 @@
         "image": "../images/UCschools.png",
         "description": "As we can see above, UCSD, contrary to our hypothesis, ranks generally in the higher range compared to other UCs. Smaller campuses like UCM, UCR, UCSB, and UCSC show highly variable engagement due to smaller sizes, but UCSD's score is notably higher than six other UCs, two of which (UCB, UCD) have larger student body sizes."
     },
-    {
-        "title": "Temporal Pattern Drift",
+        {
+        "title": "Temporal Trend Analysis",
         "year": "2024",
-        "image": "https://picsum.photos/seed/temporal/800/600",
-        "description": "This visualization examines how patterns in the dataset evolve over time, revealing gradual shifts in distribution and intensity. Rather than focusing on static snapshots, it emphasizes motion within the data and how relationships change across intervals. The result highlights subtle temporal drift that would be difficult to detect without aggregation."
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Line_graph_example.svg",
+        "description": "This line graph tracks how values change over time, revealing trends, spikes, and gradual shifts in the dataset. It helps contextualize long-term movement rather than isolated data points."
     },
     {
         "title": "Network Connectivity Map",
         "year": "2024",
-        "image": "https://picsum.photos/seed/network/800/600",
-        "description": "This graph represents relationships between entities as a network structure, where nodes and edges reveal clusters of interaction. The visualization emphasizes central hubs and isolated components, helping identify key points of influence within the system. It demonstrates how network structure can reveal hierarchy and dependency."
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Network_graph_example.svg",
+        "description": "This network graph represents relationships between entities, where nodes and edges highlight clusters of interaction and central hubs within the system."
     },
     {
-        "title": "Geospatial Density Overlay",
-        "year": "2023",
-        "image": "https://picsum.photos/seed/geospatial/800/600",
-        "description": "This map-based visualization overlays density information onto geographic space, highlighting areas of concentrated activity. By translating raw coordinates into spatial intensity, it reveals regional clustering patterns that are not immediately visible in tabular data. The visualization emphasizes how location-based analysis can uncover environmental or behavioral trends."
+        "title": "Geospatial Density Visualization",
+        "year": "2024",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/World_map_blank_without_borders.svg",
+        "description": "This map-based visualization represents spatial distribution of data across geographic regions, revealing areas of concentration and sparsity."
     },
     {
-        "title": "Distribution Skew Analysis",
-        "year": "2023",
-        "image": "https://picsum.photos/seed/distribution/800/600",
-        "description": "This chart explores asymmetry in data distributions, focusing on how values deviate from expected symmetry. It highlights skewness and outliers, helping to identify whether the dataset is balanced or influenced by extreme values. The visualization supports deeper interpretation of central tendency measures."
+        "title": "Distribution Analysis",
+        "year": "2024",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Normal_distribution_pdf.png",
+        "description": "This plot examines how values are distributed across the dataset, highlighting central tendency, spread, and skewness in the data."
     },
     {
         "title": "Multilingual Sentiment Comparison",
         "year": "2023",
-        "image": "https://picsum.photos/seed/sentiment/800/600",
-        "description": "Esta visualización compara el sentimiento expresado en diferentes idiomas dentro del mismo conjunto de datos, mostrando cómo el lenguaje puede influir en la interpretación emocional. Elle met en évidence des variations subtiles entre les catégories linguistiques et révèle des tendances culturelles dans les données. The combined view demonstrates how multilingual analysis can surface hidden bias in textual datasets."
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bar_chart_example.svg",
+        "description": "This bar chart compares sentiment scores across multiple language datasets, revealing variation in emotional expression and interpretation across linguistic groups."
     },
     {
         "title": "Feature Importance Ranking",
-        "year": "2022",
-        "image": "https://picsum.photos/seed/features/800/600",
-        "description": "This visualization ranks variables by their contribution to predictive performance within a model. It highlights which features carry the most weight and which have minimal impact, supporting model interpretability. The result helps clarify how decisions are being driven by underlying data attributes."
+        "year": "2023",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Feature_importance_plot.png",
+        "description": "This visualization ranks variables by their predictive importance in a model, helping identify which features most strongly influence outcomes."
     }
 ]
