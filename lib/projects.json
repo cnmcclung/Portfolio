@@ -21,48 +21,57 @@
         "description": "This heatmap visualizes relationships between variables in the DSC 80 dataset, using color intensity to highlight patterns of similarity and difference across the data. By condensing complex interactions into a single visual structure, it makes underlying trends easier to identify at a glance. The result reveals clusters and gradients that would be difficult to detect in raw tabular form, emphasizing how visualization can simplify high-dimensional data."
     },
     {
-        "title": "Ad eligendi iusto sunt!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Assumenda amet quia illum maxime aliquam eaque vitae sit nihil ipsam, temporibus inventore cum, debitis harum odit accusantium rem deleniti unde repudiandae ut sunt obcaecati, eius beatae. Dolor, delectus ullam."
+        "title": "106 Checkpoint",
+        "year": "2026",
+        "image": "../images/checkpt.png",
+        "description": "This image captures an early attempt produced during the data exploration phase of the project, where different visualization approaches were tested to understand the structure and behavior of the dataset. It reflects an experimental stage in which design choices were still evolving and not yet finalized. The result highlights how initial explorations can reveal patterns and guide more refined, intentional visualizations later in the process."
     },
     {
-        "title": "Placeat itaque sequi numquam!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sequi magni quos veniam dignissimos, recusandae dolore sit earum eveniet veritatis explicabo cumque suscipit, blanditiis, similique voluptate quae nobis corporis maxime laboriosam deserunt nihil quas nesciunt laudantium! Ullam, sed nisi?"
+        "title": "Correlation Matrix",
+        "year": "2025",
+        "image": "../images/corr_matrix.png",
+        "description": "The correlation matrix supports the idea that 'social life' manifests differently across campuses depending on the platform. Instragram metrics form a tightly connected cluster, indicating that campuses with strong social precense, like high likes, comments, shares, and large follower bases, tend to excel consistently across all instagram engagement factors."
     },
     {
-        "title": "Necessitatibus veritatis nobis esse!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Vitae optio error, harum dolorum accusantium maxime impedit facilis qui quisquam? Maxime sint, rerum quae hic delectus excepturi sunt culpa, illum eveniet vitae aliquid voluptatum deleniti aliquam non nostrum praesentium."
+        "title": "Cogs 108: UC Schools",
+        "year": "2025",
+        "image": "../images/UCschools.png",
+        "description": "As we can see above, UCSD, contrary to our hypothesis, ranks generally in the higher range compared to other UCs. Smaller campuses like UCM, UCR, UCSB, and UCSC show highly variable engagement due to smaller sizes, but UCSD's score is notably higher than six other UCs, two of which (UCB, UCD) have larger student body sizes."
     },
     {
-        "title": "Vel reiciendis accusamus obcaecati.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nisi repellat eos, eaque non tempora minus accusantium unde hic, atque ipsum rerum, debitis nihil doloribus fuga repudiandae asperiores harum ullam ab. Ipsum suscipit vero delectus quidem! Ex, error unde!"
+        "title": "Temporal Pattern Drift",
+        "year": "2024",
+        "image": "https://picsum.photos/seed/temporal/800/600",
+        "description": "This visualization examines how patterns in the dataset evolve over time, revealing gradual shifts in distribution and intensity. Rather than focusing on static snapshots, it emphasizes motion within the data and how relationships change across intervals. The result highlights subtle temporal drift that would be difficult to detect without aggregation."
     },
     {
-        "title": "Repellendus aspernatur rem voluptatem!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptatum aut, sunt eveniet reiciendis minima illum dolorum temporibus architecto odit exercitationem, doloribus dicta distinctio voluptatibus eum esse consequatur eius labore illo sapiente cum? Incidunt eaque vitae suscipit est quasi."
+        "title": "Network Connectivity Map",
+        "year": "2024",
+        "image": "https://picsum.photos/seed/network/800/600",
+        "description": "This graph represents relationships between entities as a network structure, where nodes and edges reveal clusters of interaction. The visualization emphasizes central hubs and isolated components, helping identify key points of influence within the system. It demonstrates how network structure can reveal hierarchy and dependency."
     },
     {
-        "title": "Facere nihil numquam mollitia!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dolorum suscipit, sapiente obcaecati quam ratione quas aspernatur et voluptates animi impedit beatae quia illo eveniet in ut aperiam voluptate similique recusandae. Aut ducimus reiciendis placeat laboriosam molestias eveniet adipisci!"
+        "title": "Geospatial Density Overlay",
+        "year": "2023",
+        "image": "https://picsum.photos/seed/geospatial/800/600",
+        "description": "This map-based visualization overlays density information onto geographic space, highlighting areas of concentrated activity. By translating raw coordinates into spatial intensity, it reveals regional clustering patterns that are not immediately visible in tabular data. The visualization emphasizes how location-based analysis can uncover environmental or behavioral trends."
     },
     {
-        "title": "Veritatis molestias autem est?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Iusto odit aliquid aliquam molestiae voluptas ipsam debitis aperiam officia expedita sequi, quos laboriosam, cumque earum obcaecati sapiente consectetur numquam reiciendis consequuntur est tenetur necessitatibus ipsa asperiores similique? Hic, suscipit."
+        "title": "Distribution Skew Analysis",
+        "year": "2023",
+        "image": "https://picsum.photos/seed/distribution/800/600",
+        "description": "This chart explores asymmetry in data distributions, focusing on how values deviate from expected symmetry. It highlights skewness and outliers, helping to identify whether the dataset is balanced or influenced by extreme values. The visualization supports deeper interpretation of central tendency measures."
     },
     {
-        "title": "Ut temporibus distinctio optio!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempore sint modi doloribus autem magni adipisci perferendis asperiores, nihil corporis iure quam ut nam excepturi, aspernatur ducimus vero fuga fugiat alias recusandae harum odio fugit. Itaque magni rerum a."
+        "title": "Multilingual Sentiment Comparison",
+        "year": "2023",
+        "image": "https://picsum.photos/seed/sentiment/800/600",
+        "description": "Esta visualización compara el sentimiento expresado en diferentes idiomas dentro del mismo conjunto de datos, mostrando cómo el lenguaje puede influir en la interpretación emocional. Elle met en évidence des variations subtiles entre les catégories linguistiques et révèle des tendances culturelles dans les données. The combined view demonstrates how multilingual analysis can surface hidden bias in textual datasets."
     },
     {
-        "title": "Unde soluta corrupti libero.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Earum assumenda laudantium aperiam facere cum. Iure velit quaerat dolores suscipit iste itaque repellendus magni nostrum, esse in quis quas pariatur placeat ex laudantium deleniti? Sequi earum porro doloribus omnis!"
+        "title": "Feature Importance Ranking",
+        "year": "2022",
+        "image": "https://picsum.photos/seed/features/800/600",
+        "description": "This visualization ranks variables by their contribution to predictive performance within a model. It highlights which features carry the most weight and which have minimal impact, supporting model interpretability. The result helps clarify how decisions are being driven by underlying data attributes."
     }
 ]
