@@ -186,8 +186,8 @@ select {
 
 
 .projects article img {
-  width: 10%;
-  height: 20px;        /* controls uniform height */
+  width: 100%;
+  height: 200px;        /* controls uniform height */
   object-fit: cover;    /* crops instead of stretching */
   display: block;
   border-radius: 8px;    /* optional but nice */
