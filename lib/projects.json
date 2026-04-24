@@ -39,25 +39,25 @@
 {
   "title": "Temporal Trend Analysis",
   "year": "2025",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Linear_trend_line_for_simple_linear_regression.png",
+  "image": "../images/temporal.png",
   "description": "This line graph tracks changes in a variable over time, revealing long-term trends, fluctuations, and patterns that emerge only when data is viewed sequentially."
 },
 {
   "title": "Correlation Heatmap Study",
   "year": "2025",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Correlation_matrix.png/640px-Correlation_matrix.png",
+  "image": "../images/corrmapagain.png",
   "description": "This heatmap visualizes pairwise correlations between variables, using color intensity to represent strength and direction of relationships across the dataset."
 },
 {
   "title": "Scatter Plot Exploration",
   "year": "2025",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Scatter_diagram_for_quality_characteristic.svg",
+  "image": "../images/scatter.png",
   "description": "This scatter plot explores relationships between two variables, helping identify correlations, clustering patterns, and potential outliers in the dataset."
 },
 {
   "title": "Network Graph Structure",
   "year": "2025",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Network_graph_example.png",
+  "image": "../images/network.png",
   "description": "This network graph represents relationships between entities, where nodes show items and edges reveal connections, clusters, and central hubs within the system."
 },
     {
