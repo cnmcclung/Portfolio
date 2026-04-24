@@ -36,30 +36,30 @@
         "image": "../images/UCschools.png",
         "description": "As we can see above, UCSD, contrary to our hypothesis, ranks generally in the higher range compared to other UCs. Smaller campuses like UCM, UCR, UCSB, and UCSC show highly variable engagement due to smaller sizes, but UCSD's score is notably higher than six other UCs, two of which (UCB, UCD) have larger student body sizes."
     },
-    {
-        "title": "Temporal Trend Analysis",
-        "year": "2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Time_series_plot.svg",
-        "description": "This line graph tracks changes in a variable over time, revealing long-term trends, fluctuations, and patterns that emerge only when data is viewed sequentially."
-    },
-    {
-        "title": "Correlation Heatmap Study",
-        "year": "2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Correlation_matrix_heatmap.svg",
-        "description": "This heatmap visualizes pairwise correlations between variables, using color intensity to represent strength and direction of relationships across the dataset."
-    },
-    {       
-         "title": "Scatter Plot Exploration",
-        "year": "2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Scatter_plot_with_linear_regression_line.svg",
-        "description": "This scatter plot explores the relationship between two quantitative variables, highlighting potential correlations, clusters, and outliers in the data."
-    },
-    {
-        "title": "Network Graph Structure",
-        "year": "2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Network_community_structure.svg",
-        "description": "This network graph represents relationships between entities, where nodes show items and edges reveal connections, clusters, and central hubs within the system."
-    },
+{
+  "title": "Temporal Trend Analysis",
+  "year": "2025",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Linear_trend_line_for_simple_linear_regression.png",
+  "description": "This line graph tracks changes in a variable over time, revealing long-term trends, fluctuations, and patterns that emerge only when data is viewed sequentially."
+},
+{
+  "title": "Correlation Heatmap Study",
+  "year": "2025",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Correlation_matrix.png/640px-Correlation_matrix.png",
+  "description": "This heatmap visualizes pairwise correlations between variables, using color intensity to represent strength and direction of relationships across the dataset."
+},
+{
+  "title": "Scatter Plot Exploration",
+  "year": "2025",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Scatter_diagram_for_quality_characteristic.svg",
+  "description": "This scatter plot explores relationships between two variables, helping identify correlations, clustering patterns, and potential outliers in the dataset."
+},
+{
+  "title": "Network Graph Structure",
+  "year": "2025",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Network_graph_example.png",
+  "description": "This network graph represents relationships between entities, where nodes show items and edges reveal connections, clusters, and central hubs within the system."
+},
     {
         "title": "Distribution Analysis",
         "year": "2025",
