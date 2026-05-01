@@ -18,37 +18,58 @@ const title = document.querySelector('.projects-title');
 title.textContent = `Projects (${count})`;
 
 
-let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+// let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 
-let arc = d3.arc().innerRadius(0).outerRadius(50)({
-  startAngle: 0,
-  endAngle: 2 * Math.PI,
-});
+// let arc = d3.arc().innerRadius(0).outerRadius(50)({
+//   startAngle: 0,
+//   endAngle: 2 * Math.PI,
+// });
 
 
-let data = [1, 2];
-let total = 0;
+// let data = [1, 2];
+// let total = 0;
 
-for (let d of data) {
-  total += d;
-}
+// for (let d of data) {
+//   total += d;
+// }
 
-let angle = 0;
-let arcData = [];
+// let angle = 0;
+// let arcData = [];
 
-for (let d of data) {
-  let endAngle = angle + (d / total) * 2 * Math.PI;
-  arcData.push({ startAngle: angle, endAngle });
-  angle = endAngle;
-}
+// for (let d of data) {
+//   let endAngle = angle + (d / total) * 2 * Math.PI;
+//   arcData.push({ startAngle: angle, endAngle });
+//   angle = endAngle;
+// }
+
+// let arcs = arcData.map((d) => arcGenerator(d));
+// let colors = ['gold', 'purple'];
+
+// let svg = d3.select('svg');
+
+// arcs.forEach((arc, idx) => {
+//   svg.append('path')
+//     .attr('d', arc)
+//     .attr('fill', colors[idx]);
+// });
+
+let data = [1, 2, 3, 4, 5, 5];
+
+let sliceGenerator = d3.pie();
+let arcData = sliceGenerator(data);
+
+let arcGenerator = d3.arc()
+  .innerRadius(0)
+  .outerRadius(50);
 
 let arcs = arcData.map((d) => arcGenerator(d));
-let colors = ['gold', 'purple'];
+
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
 let svg = d3.select('svg');
 
 arcs.forEach((arc, idx) => {
   svg.append('path')
     .attr('d', arc)
-    .attr('fill', colors[idx]);
+    .attr('fill', colors(idx));
 });
