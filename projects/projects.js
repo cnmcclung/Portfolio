@@ -226,3 +226,5 @@ function renderPieChart(projectsGiven) {
             ${d.year} <em>(${d.count})</em>
         `);
     }
+
+    renderPieChart(projects);
