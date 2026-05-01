@@ -162,14 +162,7 @@ title.textContent = `Projects (${count})`;
 
 // renderPieChart(projects);
 
-// searchInput.addEventListener('change', (event) => {
-//   let filteredProjects = setQuery(event.target.value);
 
-//   // re-render legends and pie chart when event triggers
-//   renderProjects(filteredProjects, projectsContainer, 'h2');
-//   renderPieChart(filteredProjects);
-
-// });
 
 
 
@@ -227,4 +220,12 @@ function renderPieChart(projectsGiven) {
         `);
     }
 
-    renderPieChart(projects);
+renderPieChart(projects);
+
+searchInput.addEventListener('change', (event) => {
+let filteredProjects = setQuery(event.target.value);
+
+renderProjects(filteredProjects, projectsContainer, 'h2');
+renderPieChart(filteredProjects);
+
+});
