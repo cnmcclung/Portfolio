@@ -209,13 +209,14 @@ select {
 
 .legend {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
   gap: 1em;
   flex: 1;
   padding: 1em;
   margin-top: 1em;
   border: 1px solid #ccc;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .legend-item {
@@ -223,6 +224,8 @@ select {
   align-items: center;
   gap: 0.5em; /* smaller than grid gap */
 }
+
+
 
 .swatch {
   display: inline-block;
