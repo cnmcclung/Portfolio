@@ -152,7 +152,7 @@ function renderPieChart(projectsGiven) {
     .enter()
     .append('path')
     .attr('d', newArc)
-    .attr('fill', colors(idx)); // assumes you have a scale
+    .attr('fill', (d, i) => d3.schemeTableau10[i % 10]);
 
   // CLEAR LEGEND
   let legend = d3.select('.legend');
