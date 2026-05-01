@@ -193,12 +193,18 @@ select {
   border-radius: 8px;    /* optional but nice */
 }
 
-
+/* 
 #projects-pie-plot {
   max-width: 20em;
   margin-block: 2em;
 
   overflow: visible;
+} */
+
+#projects-pie-plot {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* optional limit */
 }
 
 .legend {
