@@ -17,6 +17,9 @@ const count = projects.length;
 const title = document.querySelector('.projects-title');
 title.textContent = `Projects (${count})`;
 
+
+let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+
 let arc = d3.arc().innerRadius(0).outerRadius(50)({
   startAngle: 0,
   endAngle: 2 * Math.PI,
