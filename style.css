@@ -204,9 +204,6 @@ select {
 .legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  gap: 1em;
-  padding: 1em;
-  margin-top: 1em;
   border: 1px solid #ccc;
   list-style: none;
 }
