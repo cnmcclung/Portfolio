@@ -111,3 +111,49 @@ searchInput.addEventListener('change', (event) => {
   // render filtered projects
   renderProjects(filteredProjects, projectsContainer, 'h2');
 });
+
+
+
+
+
+
+function renderPieChart(projectsGiven) {
+  // re-calculate rolled data
+  let newRolledData = d3.rollups(
+    projectsGiven,
+    (v) => v.length,
+    (d) => d.year,
+  );
+
+  // re-calculate data
+  let newData = newRolledData.map(([year, count]) => {
+    return { year, count };
+  });
+
+  // pie generator
+  let newSliceGenerator = d3.pie().value(d => d.count);
+
+  // arc data
+  let newArcData = newSliceGenerator(newData);
+
+  // arc generator (assumes you already defined radius elsewhere)
+  let newArc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(40);
+
+  // SELECT SVG + CLEAR OLD PATHS
+  let newSVG = d3.select('#projects-pie-plot');
+  newSVG.selectAll('path').remove();
+
+  // DRAW PIE SLICES
+  newSVG
+    .selectAll('path')
+    .data(newArcData)
+    .enter()
+    .append('path')
+    .attr('d', newArc)
+    .attr('fill', d => colorScale(d.data.year)); // assumes you have a scale
+
+  // CLEAR LEGEND
+  let legend = d3.select('.legend');
+  legend.selectAll('*').remove();
