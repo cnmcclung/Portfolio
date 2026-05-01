@@ -157,3 +157,5 @@ function renderPieChart(projectsGiven) {
   // CLEAR LEGEND
   let legend = d3.select('.legend');
   legend.selectAll('*').remove();
+
+}
