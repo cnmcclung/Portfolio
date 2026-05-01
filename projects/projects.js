@@ -95,3 +95,19 @@ data.forEach((d, idx) => {
 });
 
 
+let query = '';
+
+let searchInput = document.querySelector('.searchBar');
+
+
+searchInput.addEventListener('change', (event) => {
+  // update query value
+  query = event.target.value;
+  // filter projects
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+  // render filtered projects
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+});
