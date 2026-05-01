@@ -152,7 +152,7 @@ function renderPieChart(projectsGiven) {
     .enter()
     .append('path')
     .attr('d', newArc)
-    .attr('fill', d => colorScale(d.data.year)); // assumes you have a scale
+    .attr('fill', colors(idx)); // assumes you have a scale
 
   // CLEAR LEGEND
   let legend = d3.select('.legend');
@@ -164,6 +164,7 @@ renderPieChart(projects);
 
 searchInput.addEventListener('change', (event) => {
   let filteredProjects = setQuery(event.target.value);
+
   // re-render legends and pie chart when event triggers
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
