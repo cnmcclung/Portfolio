@@ -97,7 +97,7 @@ title.textContent = `Projects (${count})`;
 
 // let query = '';
 
-// let searchInput = document.querySelector('.searchBar');
+
 
 
 // searchInput.addEventListener('change', (event) => {
@@ -221,6 +221,8 @@ function renderPieChart(projectsGiven) {
     }
 
 renderPieChart(projects);
+
+let searchInput = document.querySelector('.searchBar');
 
 searchInput.addEventListener('change', (event) => {
 let filteredProjects = setQuery(event.target.value);
