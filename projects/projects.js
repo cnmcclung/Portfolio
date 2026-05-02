@@ -314,15 +314,15 @@ function renderPieChart(projectsGiven) {
         selectedIndex = selectedIndex === i ? -1 : i;
         renderPieChart(projectsGiven);
 
-        // svg.selectAll('path')
-        //   .attr('class', (_, idx) =>
-        //     idx === selectedIndex ? 'selected' : ''
-        //   );
+        svg.selectAll('path')
+          .attr('class', (_, idx) =>
+            idx === selectedIndex ? 'selected' : ''
+          );
 
-        // legend.selectAll('li')
-        //   .attr('class', (_, idx) =>
-        //     `legend-item ${idx === selectedIndex ? 'selected' : ''}`
-        //   );
+        legend.selectAll('li')
+          .attr('class', (_, idx) =>
+            `legend-item ${idx === selectedIndex ? 'selected' : ''}`
+          );
       });
 
     legend.selectAll('li')
