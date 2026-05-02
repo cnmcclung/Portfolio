@@ -275,6 +275,75 @@ let query = '';
 //         `);
 //     }
 
+//---------------------------------------------------------------------------------
+// function renderPieChart(projectsGiven) {
+//     let newRolledData = d3.rollups(
+//         projectsGiven,
+//         v => v.length,
+//         d => d.year
+//     );
+
+//     let newData = newRolledData.map(([year, count]) => ({
+//         year,
+//         count
+//     }));
+
+//     let pie = d3.pie().value(d => d.count);
+//     let arcData = pie(newData);
+
+//     let arc = d3.arc()
+//         .innerRadius(0)
+//         .outerRadius(40);
+        
+
+//     let svg = d3.select('#projects-pie-plot');
+//     svg.selectAll('path').remove();
+    
+
+//     let legend = d3.select('.legend');
+//     legend.selectAll('*').remove();
+
+
+//     svg
+//       .selectAll('path')
+//       .data(arcData)
+//       .enter()
+//       .append('path')
+//       .attr('d', arc)
+//       .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
+
+//       .on('click', (_, i) => {
+
+//         selectedIndex = selectedIndex === i ? -1 : i;
+//         renderPieChart(projectsGiven);
+
+//         // svg.selectAll('path')
+//         //   .attr('class', (_, idx) =>
+//         //     idx === selectedIndex ? 'selected' : ''
+//         //   );
+
+//         // legend.selectAll('li')
+//         //   .attr('class', (_, idx) =>
+//         //     `legend-item ${idx === selectedIndex ? 'selected' : ''}`
+//         //   );
+//       });
+
+
+
+
+
+
+//     legend.selectAll('li')
+//         .data(newData)
+//         .enter()
+//         .append('li')
+//         .attr('class', 'legend-item')
+//         .html((d, i) => `
+//             <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
+//             ${d.year} <em>(${d.count})</em>
+//         `);
+// }
+//-----------------------------------------------------------------
 
 function renderPieChart(projectsGiven) {
     let newRolledData = d3.rollups(
@@ -296,62 +365,44 @@ function renderPieChart(projectsGiven) {
         .outerRadius(40);
 
     let svg = d3.select('#projects-pie-plot');
-    svg.selectAll('path').remove();
-
     let legend = d3.select('.legend');
+
+    // remove old elements
+    svg.selectAll('path').remove();
     legend.selectAll('*').remove();
 
-    svg
-      .selectAll('path')
-      .data(arcData)
-      .enter()
-      .append('path')
-      .attr('d', arc)
-      .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
+    // PIE CHART
+    svg.selectAll('path')
+        .data(arcData)
+        .enter()
+        .append('path')
+        .attr('d', arc)
+        .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
+        .attr('class', (d, i) =>
+            i === selectedIndex ? 'selected' : ''
+        )
+        .on('click', (_, i) => {
 
-    //   .on('click', (_, i) => {
+            // toggle selection
+            selectedIndex = selectedIndex === i ? -1 : i;
 
-    //     selectedIndex = selectedIndex === i ? -1 : i;
-    //     renderPieChart(projectsGiven);
+            // re-render everything with updated selection
+            renderPieChart(projectsGiven);
+        });
 
-    //     svg.selectAll('path')
-    //       .attr('class', (_, idx) =>
-    //         idx === selectedIndex ? 'selected' : ''
-    //       );
-
-    //     legend.selectAll('li')
-    //       .attr('class', (_, idx) =>
-    //         `legend-item ${idx === selectedIndex ? 'selected' : ''}`
-    //       );
-    //   });
-    .on('click', (_, i) => {
-
-        selectedIndex = selectedIndex === i ? -1 : i;
-
-        svg.selectAll('path')
-        .classed('selected', (d, idx) => idx === selectedIndex);
-
-        legend.selectAll('li')
-        .classed('selected', (d, idx) => idx === selectedIndex);
-    });
-
-
-
-
-
+    // LEGEND
     legend.selectAll('li')
         .data(newData)
         .enter()
         .append('li')
-        .attr('class', 'legend-item')
+        .attr('class', (d, i) =>
+            `legend-item ${i === selectedIndex ? 'selected' : ''}`
+        )
         .html((d, i) => `
             <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
             ${d.year} <em>(${d.count})</em>
         `);
 }
-
-
-
 
 
 
