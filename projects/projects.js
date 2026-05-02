@@ -309,21 +309,35 @@ function renderPieChart(projectsGiven) {
       .attr('d', arc)
       .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
 
-      .on('click', (_, i) => {
+    //   .on('click', (_, i) => {
+
+    //     selectedIndex = selectedIndex === i ? -1 : i;
+    //     renderPieChart(projectsGiven);
+
+    //     svg.selectAll('path')
+    //       .attr('class', (_, idx) =>
+    //         idx === selectedIndex ? 'selected' : ''
+    //       );
+
+    //     legend.selectAll('li')
+    //       .attr('class', (_, idx) =>
+    //         `legend-item ${idx === selectedIndex ? 'selected' : ''}`
+    //       );
+    //   });
+    .on('click', (_, i) => {
 
         selectedIndex = selectedIndex === i ? -1 : i;
-        renderPieChart(projectsGiven);
 
         svg.selectAll('path')
-          .attr('class', (_, idx) =>
-            idx === selectedIndex ? 'selected' : ''
-          );
+        .classed('selected', (d, idx) => idx === selectedIndex);
 
         legend.selectAll('li')
-          .attr('class', (_, idx) =>
-            `legend-item ${idx === selectedIndex ? 'selected' : ''}`
-          );
-      });
+        .classed('selected', (d, idx) => idx === selectedIndex);
+    });
+
+
+
+
 
     legend.selectAll('li')
         .data(newData)
