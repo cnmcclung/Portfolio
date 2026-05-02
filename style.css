@@ -247,10 +247,13 @@ select {
 
 
 
-
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
 
 #projects-pie-plot path {
   cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 
 .selected {
