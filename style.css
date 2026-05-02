@@ -256,9 +256,10 @@ select {
   transition: opacity 0.2s ease;
 }
 
-.selected {
+path.selected {
   fill: rgb(255, 166, 0) !important;
 }
+
 
 .legend-item.selected {
   font-weight: bold;
