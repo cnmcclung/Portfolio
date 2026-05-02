@@ -378,9 +378,10 @@ function renderPieChart(projectsGiven) {
         .append('path')
         .attr('d', arc)
         .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
-        .attr('class', (d, i) =>
-            i === selectedIndex ? 'selected' : ''
-        )
+        // .attr('class', (d, i) =>
+        //     i === selectedIndex ? 'selected' : ''
+        // )
+        .attr('fill', (d, i) => i === selectedIndex ? 'rgb(255, 166, 0)' : d3.schemeTableau10[i % 10])
         .on('click', (_, i) => {
 
             // toggle selection
@@ -392,16 +393,14 @@ function renderPieChart(projectsGiven) {
 
     // LEGEND
     legend.selectAll('li')
-        .data(newData)
-        .enter()
-        .append('li')
-        .attr('class', (d, i) =>
-            `legend-item ${i === selectedIndex ? 'selected' : ''}`
-        )
-        .html((d, i) => `
-            <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
-            ${d.year} <em>(${d.count})</em>
-        `);
+    .data(newData)
+    .join('li')
+    .attr('class', 'legend-item')
+    .classed('selected', (d, i) => i === selectedIndex)
+    .html((d, i) => `
+        <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
+        ${d.year} <em>(${d.count})</em>
+    `);
 }
 
 
