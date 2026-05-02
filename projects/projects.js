@@ -95,7 +95,7 @@ title.textContent = `Projects (${count})`;
 // });
 
 
-// let query = '';
+let query = '';
 
 
 
@@ -224,10 +224,22 @@ renderPieChart(projects);
 
 let searchInput = document.querySelector('.searchBar');
 
+// searchInput.addEventListener('change', (event) => {
+// let filteredProjects = setQuery(event.target.value);
+
+// renderProjects(filteredProjects, projectsContainer, 'h2');
+// renderPieChart(filteredProjects);
+
+// });
+
 searchInput.addEventListener('change', (event) => {
-let filteredProjects = setQuery(event.target.value);
+  let query = event.target.value;
 
-renderProjects(filteredProjects, projectsContainer, 'h2');
-renderPieChart(filteredProjects);
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
 
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+  renderPieChart(filteredProjects);
 });
