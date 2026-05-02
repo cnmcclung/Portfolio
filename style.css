@@ -254,7 +254,7 @@ select {
 }
 
 .selected {
-  fill: orange !important;
+  fill: rgb(255, 166, 0) !important;
 }
 
 .legend-item.selected {
