@@ -232,7 +232,7 @@ let searchInput = document.querySelector('.searchBar');
 
 // });
 
-searchInput.addEventListener('change', (event) => {
+searchInput.addEventListener('input', (event) => {
   let query = event.target.value;
 
   let filteredProjects = projects.filter((project) => {
