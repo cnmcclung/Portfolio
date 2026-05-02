@@ -244,3 +244,19 @@ select {
   align-items: center;   /* vertically centers chart + legend */
   gap: 2rem;             /* space between pie and legend */
 }
+
+
+
+
+
+#projects-pie-plot path {
+  cursor: pointer;
+}
+
+.selected {
+  fill: orange !important;
+}
+
+.legend-item.selected {
+  font-weight: bold;
+}

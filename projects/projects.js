@@ -1,6 +1,7 @@
 import { fetchJSON, renderProjects } from '../global.js';
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 
+let selectedIndex = -1;
 
 const projects = await fetchJSON('../lib/projects.json');
 
@@ -177,6 +178,104 @@ let query = '';
 //     ${d.year} <em>(${d.count})</em>
 //   `);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function renderPieChart(projectsGiven) {
+//     let newRolledData = d3.rollups(
+//         projectsGiven,
+//         v => v.length,
+//         d => d.year
+//     );
+
+//     let newData = newRolledData.map(([year, count]) => ({
+//         year,
+//         count
+//     }));
+
+//     let pie = d3.pie().value(d => d.count);
+//     let arcData = pie(newData);
+
+//     let arc = d3.arc()
+//         .innerRadius(0)
+//         .outerRadius(40);
+
+//     let svg = d3.select('#projects-pie-plot');
+//     svg.selectAll('path').remove();
+
+//     // svg.selectAll('path')
+//     //     .data(arcData)
+//     //     .enter()
+//     //     .append('path')
+//     //     .attr('d', arc)
+//     //     .attr('fill', (d, i) => d3.schemeTableau10[i % 10]);
+
+//     let legend = d3.select('.legend');
+//     legend.selectAll('*').remove();
+
+//     newSVG
+//         .selectAll('path')
+//         .data(newArcData)
+//         .enter()
+//         .append('path')
+//         .attr('d', newArc)
+//         .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
+//         .on('click', (_, i) => {
+
+
+//         // toggle selection
+//         selectedIndex = selectedIndex === i ? -1 : i;
+
+//         // update pie slices
+//         newSVG.selectAll('path')
+//         .attr('class', (_, idx) =>
+//             idx === selectedIndex ? 'selected' : ''
+//             );
+
+//         // update legend
+//         legend.selectAll('li')
+//             .attr('class', (_, idx) =>
+//                 `legend-item ${idx === selectedIndex ? 'selected' : ''}`
+//             );
+//         });
+
+
+
+
+//     legend.selectAll('li')
+//         .data(newData)
+//         .enter()
+//         .append('li')
+//         .attr('class', 'legend-item')
+//         .html((d, i) => `
+//             <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
+//             ${d.year} <em>(${d.count})</em>
+//         `);
+//     }
+
+
 function renderPieChart(projectsGiven) {
     let newRolledData = d3.rollups(
         projectsGiven,
@@ -199,15 +298,30 @@ function renderPieChart(projectsGiven) {
     let svg = d3.select('#projects-pie-plot');
     svg.selectAll('path').remove();
 
-    svg.selectAll('path')
-        .data(arcData)
-        .enter()
-        .append('path')
-        .attr('d', arc)
-        .attr('fill', (d, i) => d3.schemeTableau10[i % 10]);
-
     let legend = d3.select('.legend');
     legend.selectAll('*').remove();
+
+    svg
+      .selectAll('path')
+      .data(arcData)
+      .enter()
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', (d, i) => d3.schemeTableau10[i % 10])
+      .on('click', (_, i) => {
+
+        selectedIndex = selectedIndex === i ? -1 : i;
+
+        svg.selectAll('path')
+          .attr('class', (_, idx) =>
+            idx === selectedIndex ? 'selected' : ''
+          );
+
+        legend.selectAll('li')
+          .attr('class', (_, idx) =>
+            `legend-item ${idx === selectedIndex ? 'selected' : ''}`
+          );
+      });
 
     legend.selectAll('li')
         .data(newData)
@@ -218,7 +332,12 @@ function renderPieChart(projectsGiven) {
             <span class="swatch" style="background:${d3.schemeTableau10[i % 10]}"></span>
             ${d.year} <em>(${d.count})</em>
         `);
-    }
+}
+
+
+
+
+
 
 renderPieChart(projects);
 
@@ -243,3 +362,8 @@ searchInput.addEventListener('input', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
+
+
+
+
+
