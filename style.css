@@ -264,3 +264,11 @@ path.selected {
 .legend-item.selected {
   font-weight: bold;
 }
+
+.selected {
+  --color: oklch(77.194% 0.17376 64.545) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
