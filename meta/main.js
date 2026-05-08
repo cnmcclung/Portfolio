@@ -42,22 +42,8 @@ function processCommits(data) {
 function renderCommitInfo(data, commits) {
   const dl = d3.select('#stats').append('dl').attr('class', 'stats');
 
-  dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
-  dl.append('dd').text(data.length);
-
-  dl.append('dt').text('Total commits');
-  dl.append('dd').text(commits.length);
-
-  dl.append('dt').text('# of files');
-  dl.append('dd').text(d3.group(data, (d) => d.file).size);
-
   const fileLengths = d3.rollups(data, (v) => d3.max(v, (v) => v.line), (d) => d.file);
   const avgFileLength = d3.mean(fileLengths, (d) => d[1]);
-  dl.append('dt').text('Avg file length (lines)');
-  dl.append('dd').text(Math.round(avgFileLength));
-
-  dl.append('dt').text('Avg line length (chars)');
-  dl.append('dd').text(Math.round(d3.mean(data, (d) => d.length)));
 
   const workByPeriod = d3.rollups(
     data,
@@ -65,8 +51,25 @@ function renderCommitInfo(data, commits) {
     (d) => new Date(d.datetime).toLocaleString('en', { dayPeriod: 'short' })
   );
   const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
-  dl.append('dt').text('Most active TOD');
-  dl.append('dd').text(maxPeriod);
+
+  const stats = [
+    { label: 'Total <abbr title="Lines of code">LOC</abbr>', value: data.length, html: true },
+    { label: 'Total Commits', value: commits.length },
+    { label: '# of Files', value: d3.group(data, (d) => d.file).size },
+    { label: 'Avg File Length (lines)', value: Math.round(avgFileLength) },
+    { label: 'Avg Line Length (chars)', value: Math.round(d3.mean(data, (d) => d.length)) },
+    { label: 'Most Active Time of Day', value: maxPeriod },
+  ];
+
+  for (const stat of stats) {
+    const div = dl.append('div');
+    if (stat.html) {
+      div.append('dt').html(stat.label);
+    } else {
+      div.append('dt').text(stat.label);
+    }
+    div.append('dd').text(stat.value);
+  }
 }
 
 let xScale, yScale;
