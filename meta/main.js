@@ -48,7 +48,7 @@ function renderCommitInfo(data, commits) {
   dl.append('dt').text('Total commits');
   dl.append('dd').text(commits.length);
 
-  dl.append('dt').text('Number of files');
+  dl.append('dt').text('# of files');
   dl.append('dd').text(d3.group(data, (d) => d.file).size);
 
   const fileLengths = d3.rollups(data, (v) => d3.max(v, (v) => v.line), (d) => d.file);
@@ -65,7 +65,7 @@ function renderCommitInfo(data, commits) {
     (d) => new Date(d.datetime).toLocaleString('en', { dayPeriod: 'short' })
   );
   const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
-  dl.append('dt').text('Most active time of day');
+  dl.append('dt').text('Most active TOD');
   dl.append('dd').text(maxPeriod);
 }
 
