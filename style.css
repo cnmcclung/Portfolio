@@ -355,11 +355,12 @@ circle.selected {
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-  gap: 0.5em 1em;
   padding: 1.5em;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   margin-bottom: 2em;
+  row-gap: 0;
+  column-gap: 1em;
 }
 
 .stats dt {
@@ -369,11 +370,15 @@ circle.selected {
   letter-spacing: 0.05em;
   color: gray;
   margin: 0;
+  padding-top: 1em;
+  align-self: end;
 }
 
 .stats dd {
   font-size: 2.5em;
   font-weight: 300;
-  margin: 0 0 0.5em 0;
-  line-height: 1.1;
+  margin: 0;
+  line-height: 1.2;
+  padding-bottom: 1em;
+  align-self: start;
 }
