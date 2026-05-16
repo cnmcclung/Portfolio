@@ -77,7 +77,7 @@
         "year": "2026",
         "image": "../images/bikewatching.png",
         "description": "Lab 7 for DSC106 (Data Vis Class): an immersive, interactive map visualization of bike traffic in the Boston area during different times of the day.",
-        "url": "http://127.0.0.1:5500/index.html"
+        "url": "https://cnmcclung.github.io/bikewatchin/"
     },
     {
         "title": "Climate Data Vis: CMIP6",
