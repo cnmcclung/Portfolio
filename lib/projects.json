@@ -71,5 +71,19 @@
         "year": "2022",
         "image": "https://seaborn.pydata.org/_images/scatterplot_matrix.png",
         "description": "This pair plot displays relationships between multiple variables simultaneously, allowing for quick identification of correlations and variable interactions."
+    },
+    {
+        "title": "Bikewatching",
+        "year": "2026",
+        "image": "../images/bikewatching.png",
+        "description": "Lab 7 for DSC106 (Data Vis Class): an immersive, interactive map visualization of bike traffic in the Boston area during different times of the day.",
+        "url": "http://127.0.0.1:5500/index.html"
+    },
+    {
+        "title": "Climate Data Vis: CMIP6",
+        "year": "2026",
+        "image": "../images/CMIP6.png",
+        "description": "Project 3 for DSC106 (Data Vis Class): The CMIP6 dataset contains global climate model simulations produced by research centers around the world under the World Climate Research Programme.",
+        "url": "https://nimishamishra95.github.io/dsc106-project-3/"
     }
 ]
